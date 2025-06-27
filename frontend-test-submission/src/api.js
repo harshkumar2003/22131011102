@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://localhost:3001'; // ✅ Your backend is on port 3001
 
 export const createShortURL = async (data) => {
   const response = await axios.post(`${BASE_URL}/shorturls`, data);
